@@ -17,12 +17,15 @@ This project provides APIs to merge and sort arrays. It is built using Express a
   }
   
 - **Response Body:**
-```json
-{
-  "data": {
-    "mergedArray": [number]
+  ```json
+  {
+    "statusCode": 200,
+    "body": "{\"data\":{\"mergedArray\":[1,1,2,3,4,5,7,9,10]}}",
+    "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*"
+    }
   }
-}
 
 ### 2. Merge Sorted Arrays
 
@@ -30,19 +33,22 @@ This project provides APIs to merge and sort arrays. It is built using Express a
 - **Method: POST
 - **Description: Merges two already sorted arrays.
 - **Request Body:
- ```json
+  ```json
   {
     "array1": [number],
     "array2": [number]
   }
   
 - **Response Body:**
-```json
-{
-  "data": {
-    "mergedArray": [number]
+  ```json
+  {
+    "statusCode": 200,
+    "body": "{\"data\":{\"mergedArray\":[1,1,2,3,4,5,7,9,10]}}",
+    "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*"
+    }
   }
-}
 
 ## Steps to Run the Project
 
@@ -64,31 +70,15 @@ npm start
 
 http://localhost:3000
 
-
-## Project Structure
-
-merge-array-project/
-├── interfaces/
-│   └── requestBody.ts
-├── layers/
-│   └── utils.ts
-├── package.json
-├── server.ts
-└── tsconfig.json
-
 ## Dependencies
-
-express
-body-parser
-cors
+  - express
 
 ## Dev Dependencies
-
-@types/express
-@types/node
-nodemon
-ts-node
-typescript
+  - @types/express
+  - @types/node
+  - nodemon
+  - ts-node
+  - typescript
 
 ## Postman collection 
 ./MergeArrays.postman_collection.json
