@@ -48,7 +48,7 @@ This project provides APIs to merge and sort arrays. It is built using Express a
 
 ### 1. Clone the repository:
 
-git clone <repository-url>
+git clone https://github.com/amrut4847/mergeArray.git
 cd merge-array-project
 
 
