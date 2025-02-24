@@ -70,15 +70,23 @@ npm start
 
 http://localhost:3000
 
+### 5. Run test cases
+
+npm test
+
 ## Dependencies
   - express
 
 ## Dev Dependencies
   - @types/express
   - @types/node
+  - @types/jest
+  - @types/supertest
   - nodemon
   - ts-node
   - typescript
+  - supertest
+  - jest
 
 ## Postman collection 
 ./MergeArrays.postman_collection.json
